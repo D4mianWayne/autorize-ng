@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group = 'com.autorize'
+version = '2.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // PortSwigger Burp Suite Montoya API
+    compileOnly 'net.portswigger.burp.extensions:montoya-api:2024.7'
+
+    // Modern JSON / AST Parsing & RFC 6902 Patch / Diffing
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.2'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.17.2'
+
+    // Cryptography for DPoP (RFC 9449) and JWT parsing
+    implementation 'com.nimbusds:nimbus-jose-jwt:9.40'
+
+    // Testing
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
+    testImplementation 'org.assertj:assertj-core:3.26.3'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs += ['-Xlint:unchecked', '-Xlint:deprecation']
+}
+
+shadowJar {
+    archiveBaseName.set('autorize-nextgen')
+    archiveClassifier.set('')
+    archiveVersion.set('2.0.0')
+    mergeServiceFiles()
+}
+
+test {
+    useJUnitPlatform()
+}

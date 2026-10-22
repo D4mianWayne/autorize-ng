@@ -1,0 +1,6 @@
+com\autorize\replay\ReplayEngineJsonFieldTest.class
+com\autorize\diff\GraphQLAnalyzerTest.class
+com\autorize\model\AutorizeConfigBundleTest.class
+com\autorize\auth\DPoPSignerTest.class
+com\autorize\auth\JwtInspectorTest.class
+com\autorize\diff\JsonStructuralDiffTest.class

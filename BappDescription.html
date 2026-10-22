@@ -1,0 +1,12 @@
+<p><strong>Autorize Next-Gen</strong> is the next-generation authorization and authentication enforcement detection extension for Burp Suite, completely rewritten for the 2026 application security landscape.</p>
+
+<h3>Key Features</h3>
+<ul>
+    <li><strong>Zero Jython Dependency:</strong> Built natively on Java 21 LTS using the modern PortSwigger Montoya API. Installs with 1 click from the BApp Store.</li>
+    <li><strong>Native Burp Project File Persistence:</strong> Test logs, user profiles, rules, and triage results are automatically saved inside your active <code>.burp</code> project database. Results survive Burp restarts, crashes, and project reloads with zero manual exporting.</li>
+    <li><strong>Dynamic Authentication Broker:</strong> Automatic token refresh for OAuth 2.0 / 2.1, RFC 9449 (DPoP) ephemeral signature generation, and Anti-CSRF token synchronization.</li>
+    <li><strong>Semantic JSON &amp; GraphQL Diffing:</strong> Tree-based comparison that ignores dynamic timestamps, nonces, and session tokens, drastically reducing false ambiguous alerts.</li>
+    <li><strong>Replay Safety Guard:</strong> Protects against accidental data destruction by gating state-changing HTTP requests (POST, PUT, DELETE) with safety prompts.</li>
+    <li><strong>Virtual Threads Concurrency:</strong> Scales across hundreds of concurrent replayed requests using Java 21 Project Loom.</li>
+    <li><strong>DevSecOps SARIF Export:</strong> Export standardized OASIS SARIF vulnerability reports for GitHub Security, GitLab CI, and Jira.</li>
+</ul>
