@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="maven-antrun-" default="main">
   <target name="main">
-    <copy file="D:\Projects\revamping-oss\autorize\autorize-nextgen\target/autorize-nextgen-2.0.0.jar" tofile="D:\Projects\revamping-oss\autorize\autorize-nextgen/build/libs/autorize-nextgen-2.0.0.jar" overwrite="true" />
+    <copy file="D:\Projects\revamping-oss\autorize\autorize-nextgen\target/autorize-nextgen-0.1.0.jar" tofile="D:\Projects\revamping-oss\autorize\autorize-nextgen/build/libs/autorize-nextgen-0.1.0.jar" overwrite="true" />
   </target>
 </project>

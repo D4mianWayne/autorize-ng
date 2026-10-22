@@ -5,7 +5,7 @@
 
     <groupId>com.autorize</groupId>
     <artifactId>autorize-nextgen</artifactId>
-    <version>2.0.0</version>
+    <version>0.1.0</version>
     <packaging>jar</packaging>
 
     <name>Autorize Next-Gen</name>
@@ -98,7 +98,7 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
-                            <finalName>autorize-nextgen-2.0.0</finalName>
+                            <finalName>autorize-nextgen-${project.version}</finalName>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                             </transformers>
@@ -130,8 +130,8 @@
                         </goals>
                         <configuration>
                             <target>
-                                <copy file="${project.build.directory}/autorize-nextgen-2.0.0.jar"
-                                      tofile="${project.basedir}/build/libs/autorize-nextgen-2.0.0.jar"
+                                <copy file="${project.build.directory}/autorize-nextgen-${project.version}.jar"
+                                      tofile="${project.basedir}/build/libs/autorize-nextgen-${project.version}.jar"
                                       overwrite="true" />
                             </target>
                         </configuration>

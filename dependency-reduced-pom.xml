@@ -4,7 +4,7 @@
   <groupId>com.autorize</groupId>
   <artifactId>autorize-nextgen</artifactId>
   <name>Autorize Next-Gen</name>
-  <version>2.0.0</version>
+  <version>0.1.0</version>
   <description>Modern Authorization and Access Control Enforcement Detection Extension for Burp Suite</description>
   <build>
     <plugins>
@@ -33,7 +33,7 @@
               <goal>shade</goal>
             </goals>
             <configuration>
-              <finalName>autorize-nextgen-2.0.0</finalName>
+              <finalName>autorize-nextgen-${project.version}</finalName>
               <transformers>
                 <transformer />
               </transformers>

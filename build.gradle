@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.autorize'
-version = '2.0.0'
+version = '0.1.0'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_21
@@ -39,7 +39,7 @@ tasks.withType(JavaCompile).configureEach {
 shadowJar {
     archiveBaseName.set('autorize-nextgen')
     archiveClassifier.set('')
-    archiveVersion.set('2.0.0')
+    archiveVersion.set(project.version.toString())
     mergeServiceFiles()
 }
 

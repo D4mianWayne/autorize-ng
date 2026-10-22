@@ -16,7 +16,7 @@ Autorize Next-Gen empowers penetration testers, red teamers, and application sec
 
 ## 🚀 Key Advantages Over Legacy Autorize
 
-| Feature / Capability | Legacy Autorize (v1.x) | Autorize Next-Gen (v2.0) |
+| Feature / Capability | Legacy Autorize (v1.x) | Autorize Next-Gen (v0.1.0) |
 | :--- | :--- | :--- |
 | **Runtime & Language** | Python 2.7 / Jython (`IBurpExtender`) | **Pure Java 21 LTS** via **Montoya API** |
 | **Classloading & Stability** | Frequent Jython memory leaks & JVM crashes | **Native JVM speed**, zero classloader conflicts |
@@ -255,8 +255,8 @@ cd autorize-nextgen
 ```
 
 The compiled standalone fat JAR containing all bundled dependencies will be generated at:
-* `autorize-nextgen/target/autorize-nextgen-2.0.0.jar`
-* `autorize-nextgen/build/libs/autorize-nextgen-2.0.0.jar`
+* `autorize-nextgen/target/autorize-nextgen-0.1.0.jar`
+* `autorize-nextgen/build/libs/autorize-nextgen-0.1.0.jar`
 
 ### Running Tests
 Execute the unit and integration test suite:
@@ -268,14 +268,18 @@ mvn test
 
 ## 📥 Installation in Burp Suite
 
-1. Launch **Burp Suite** (Professional or Community Edition).
-2. Go to **Extensions** → **Installed**.
-3. Click **Add**.
-4. Configure extension details:
-   * **Extension type**: `Java`
-   * **Extension file (.jar)**: Browse and select `autorize-nextgen-2.0.0.jar`.
-5. Click **Next**.
-6. The **Autorize Next-Gen** tab will appear in your top Burp Suite navigation bar.
+### Option A: Download Pre-Built JAR (Recommended)
+1. Download the latest `autorize-nextgen-0.1.0.jar` from [GitHub Releases](https://github.com/portswigger/autorize/releases).
+2. Open **Burp Suite** (Professional or Community Edition).
+3. Navigate to **Extensions** → **Installed** → click **Add**.
+4. Set **Extension type** to `Java` and select the downloaded `.jar` file.
+5. Click **Next** — the **Autorize Next-Gen** tab will appear in your top navigation bar.
+
+### Option B: Build from Source
+If building manually:
+1. Follow the [Building from Source](#%EF%B8%8F-building-from-source) steps above.
+2. In Burp Suite, go to **Extensions** → **Installed** → click **Add**.
+3. Select `autorize-nextgen/target/autorize-nextgen-0.1.0.jar` (or `build/libs/autorize-nextgen-0.1.0.jar`).
 
 ---
 

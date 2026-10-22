@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="com.autorize.diff.JsonStructuralDiffTest" time="0.006" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="com.autorize.diff.JsonStructuralDiffTest" time="0.011" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="27"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-27\bin"/>
-    <property name="sun.java.command" value="C:\Users\dubey\AppData\Local\Temp\surefire10423452767757885969\surefirebooter-20261022085258452_3.jar C:\Users\dubey\AppData\Local\Temp\surefire10423452767757885969 2026-10-22T08-52-58_355-jvmRun1 surefire-20261022085258452_1tmp surefire_0-20261022085258452_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\dubey\AppData\Local\Temp\surefire3958674271094944383\surefirebooter-20261022101457510_3.jar C:\Users\dubey\AppData\Local\Temp\surefire3958674271094944383 2026-10-22T10-14-57_330-jvmRun1 surefire-20261022101457510_1tmp surefire_0-20261022101457510_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Projects\revamping-oss\autorize\autorize-nextgen\target\test-classes;D:\Projects\revamping-oss\autorize\autorize-nextgen\target\classes;C:\Users\dubey\.m2\repository\net\portswigger\burp\extensions\montoya-api\2024.7\montoya-api-2024.7.jar;C:\Users\dubey\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\dubey\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\dubey\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\dubey\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\dubey\.m2\repository\com\nimbusds\nimbus-jose-jwt\9.40\nimbus-jose-jwt-9.40.jar;C:\Users\dubey\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\dubey\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\dubey\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\dubey\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\dubey\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\dubey\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\dubey\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\dubey\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\dubey\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\dubey\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\dubey\AppData\Local\Temp\surefire10423452767757885969\surefirebooter-20261022085258452_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\dubey\AppData\Local\Temp\surefire3958674271094944383\surefirebooter-20261022101457510_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="27+35-2325"/>
@@ -59,6 +59,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="71.0"/>
   </properties>
-  <testcase name="shouldMaskDynamicNoiseAndDetectBypass" classname="com.autorize.diff.JsonStructuralDiffTest" time="0.004"/>
-  <testcase name="shouldDetectEnforcementWhenDataDiverges" classname="com.autorize.diff.JsonStructuralDiffTest" time="0.0"/>
+  <testcase name="shouldMaskDynamicNoiseAndDetectBypass" classname="com.autorize.diff.JsonStructuralDiffTest" time="0.008"/>
+  <testcase name="shouldDetectEnforcementWhenDataDiverges" classname="com.autorize.diff.JsonStructuralDiffTest" time="0.001"/>
 </testsuite>
