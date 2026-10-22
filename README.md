@@ -269,7 +269,7 @@ mvn test
 ## 📥 Installation in Burp Suite
 
 ### Option A: Download Pre-Built JAR (Recommended)
-1. Download the latest `autorize-nextgen-0.1.0.jar` from [GitHub Releases](https://github.com/portswigger/autorize/releases).
+1. Download the latest `autorize-nextgen-0.1.0.jar` from [GitHub Releases](https://github.com/D4mianWayne/autorize-ng/releases).
 2. Open **Burp Suite** (Professional or Community Edition).
 3. Navigate to **Extensions** → **Installed** → click **Add**.
 4. Set **Extension type** to `Java` and select the downloaded `.jar` file.
